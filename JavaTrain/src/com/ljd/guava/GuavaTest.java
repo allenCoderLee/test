@@ -110,7 +110,10 @@ public class GuavaTest {
 		map.put("item0", "v1");
 		map.put("item0", "v2");
 		map.put("item1", "v0");
-		System.out.println(map);
+		System.out.println(map.get("item0"));
+		
+		map.get("item0").remove("v3");
+		System.out.println(map.get("item0"));
 	}
 	
 	@Test
@@ -120,7 +123,7 @@ public class GuavaTest {
 //		map.put("item1", "v1");		//不能有value相同的数据
 		map.put("item0", "v0");
 		
-		System.out.println(map);
+		System.out.println(map.get("item0"));
 		
 	}
 	
